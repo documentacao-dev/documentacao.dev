@@ -18,6 +18,12 @@
 
 ### 🔜 Em Breve
 ![Go](https://img.shields.io/badge/Go-Em_Breve-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Em_Breve-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-Em_Breve-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-Em_Breve-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-Em_Breve-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-Em_Breve-F05138?style=for-the-badge&logo=swift&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-Em_Breve-000000?style=for-the-badge&logo=rust&logoColor=white)
 
 ## 🌟 Sobre o Projeto
 
