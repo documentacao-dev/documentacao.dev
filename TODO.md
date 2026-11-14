@@ -1,0 +1,88 @@
+# TODO
+
+## 1. Organização no GitHub
+
+- [ ] Criar a organização em <https://github.com/account/organizations/new> (plano Free)
+  - Nome preferido: `documentacao-dev` (igual ao domínio)
+  - Alternativas: `docbr`, `docs-br`, `docsbrasil`
+- [ ] Antes de transferir cada repositório, revisar:
+  - [ ] Secrets do GitHub Actions e integrações de deploy (ex.: Firebase no dartbrasil)
+  - [ ] Domínios personalizados (flutterbrasil.dev, dartbrasil.dev, angularbrasil.dev…)
+  - [ ] GitHub Apps instalados (ex.: Claude), que precisam ser instalados de novo na org
+- [ ] Transferir os repositórios (*Settings → Danger zone → Transfer*). O GitHub mantém o redirecionamento das URLs antigas.
+  - [ ] `ulisseshen/documentacao.dev`
+  - [ ] `dart2brasil/site-www`
+  - [ ] Flutter (flutterbrasil.dev e docs.flutterbrasil.dev)
+  - [ ] Angular
+  - [ ] React Native
+- [ ] Decidir o destino das orgs antigas (`dart2brasil`, `brasilflutter`): manter vazias para guardar o nome ou apagar depois da migração
+- [ ] Criar um time por tradução (`time-dart`, `time-typescript`…) com permissão só no seu repositório
+- [ ] Atualizar os links do README e do site para a nova organização
+
+## 2. Estrutura: um repositório por tradução
+
+Não centralizar o conteúdo num monorepo. Cada tradução continua num **fork do upstream**, para que o sync seja um `git merge upstream/main`. Cada site também usa uma ferramenta diferente (mdBook, DocC, Next.js, Gatsby, Writerside, `dash_site`).
+
+O documentacao.dev centraliza o que é comum:
+
+- [ ] Página "Processo de sincronização com o upstream", usando o dartbrasil como referência (PR #146 / branch `sync/upstream-2026-11`)
+- [ ] Glossário único de termos técnicos
+- [ ] Prompt do agente tradutor (hoje em `.claude/agents/agent-translator.md` no dartbrasil)
+- [ ] Script de conferência da tradução contra o inglês (blocos de código, links, âncoras, Liquid, YAML). Hoje ele não está versionado no dartbrasil; só existe o `check-anchors.sh`.
+- [ ] Workflow reutilizável de checagem do upstream (`.github/workflows/`), que cada fork chama com poucas linhas
+- [ ] Painel no site com o progresso e as páginas desatualizadas de cada tradução
+
+## 3. Processo de sync
+
+Fluxo atual no dartbrasil:
+
+1. Fork com `upstream` apontando para o repositório original
+2. Branch `sync/upstream-AAAA-MM` com merge de `upstream/main`
+3. Retradução das páginas alteradas, aproveitando a tradução anterior
+4. Retradução dos dados (sidenav, quizzes, glossário, header, footer)
+5. Conferência por script contra o inglês
+6. PR do sync e merge
+
+Melhorias:
+
+- [ ] Checagem automática semanal do upstream: listar os arquivos alterados desde o último sync e abrir issue "Página desatualizada" com o diff do inglês. O último sync do dartbrasil juntou 400 commits e 260 páginas de uma vez.
+- [ ] Arquivo de configuração por repositório (`.traducao.yml`), para os scripts funcionarem com upstreams e estruturas de pastas diferentes:
+
+  ```yaml
+  upstream:
+    repo: dart-lang/site-www
+    branch: main
+  conteudo:
+    - src/content/**/*.md
+    - src/data/**/*.yml
+  layout: in-place          # ou: pasta-paralela (en/ → pt/)
+  # destino: packages/documentation/copy/pt   (só para pasta-paralela)
+  ```
+
+- [ ] Trocar o `ia-translate: true` do frontmatter por um arquivo de controle com o commit do upstream em que cada página foi traduzida:
+
+  ```json
+  // .traducao/status.json
+  { "src/content/language/async.md": "a1b2c3d" }
+  ```
+
+  Funciona em formatos sem frontmatter (mdBook, Writerside), e `git diff <commit> upstream/main -- <arquivo>` mostra só o trecho a retraduzir.
+
+## 4. Novas traduções (já em "Em Breve")
+
+Ordem sugerida, com upstream, conteúdo e licença:
+
+- [ ] **TypeScript**: `microsoft/TypeScript-Website` (branch `v2`), `packages/documentation/copy/en` → `pt`. Layout de pasta paralela. CC-BY 4.0. O Handbook não tem tradução em PT; o repositório `microsoft/TypeScript-Website-Localizations` tem só referência, tsconfig e playground em PT.
+- [ ] **Expo**: `expo/expo`, `docs/pages/**/*.mdx`. MIT. Não existe tradução.
+- [ ] **Kotlin**: `JetBrains/kotlin-web-site`, `docs/topics/`. Usa Writerside. Apache 2.0. O time do Kotlin incentiva traduções publicadas em site próprio.
+- [ ] **Next.js**: `vercel/next.js`, pasta `docs/`. MIT. O repositório é enorme: criar um repo só com as docs e buscar o upstream com *sparse checkout*.
+- [ ] **Swift**: `swiftlang/swift-book`, `TSPL.docc/`. Usa DocC. Apache 2.0. As traduções comunitárias anteriores estão abandonadas.
+- [ ] **Rust**: `rust-lang/book`, `src/*.md`. Usa mdBook. MIT/Apache 2.0. A `rust-br/rust-book-pt-br` está parada desde 2024: propor colaboração antes de começar do zero.
+- [ ] Go (já estava em "Em Breve")
+
+Para cada uma:
+
+- [ ] Conferir a política de marca registrada antes de registrar o domínio (principalmente Vercel/Next.js e Apple/Swift)
+- [ ] Manter o aviso de licença e a atribuição ao original no site traduzido
+- [ ] Ao lançar, mover de "Em Breve" para "Em Processo"/"Disponíveis" no README e em `src/lib/components/doc_cards.dart`
+- [ ] Validar o site com `jaspr serve` (os cards novos não foram compilados porque o Dart não estava instalado na sessão que os criou)
