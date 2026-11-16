@@ -87,8 +87,14 @@ const _docs = [
   ]),
   _Doc('React Native', 'reactNative', 'Framework mobile', 'processo',
       'Tradução em andamento. Dá para ajudar revisando as páginas já traduzidas.'),
-  _Doc('Go', 'go', 'Linguagem', 'fila', 'Documentação oficial da linguagem e do toolchain.'),
-  _Doc('TypeScript', 'typeScript', 'Linguagem', 'fila', 'Handbook e referência do JavaScript com tipos.'),
+  _Doc('Go', 'go', 'Linguagem', 'processo',
+      'Tutoriais, instalação, Como escrever código Go e Effective Go já traduzidos. Falta publicar o site.', [
+    ('repositório go-brasil', 'https://github.com/documentacao-dev/go-brasil'),
+  ]),
+  _Doc('TypeScript', 'typeScript', 'Linguagem', 'processo',
+      'O Handbook inteiro já está traduzido. Falta publicar o site.', [
+    ('repositório typescript-brasil', 'https://github.com/documentacao-dev/typescript-brasil'),
+  ]),
   _Doc('Expo', 'expo', 'Plataforma React Native', 'fila', 'Guias de build, deploy e SDK do Expo.'),
   _Doc('Kotlin', 'kotlin', 'Linguagem', 'fila', 'Linguagem para Android e multiplataforma.'),
   _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
