@@ -12,7 +12,7 @@ body:
         Obrigado por contribuir com o projeto! Use este formulário para solicitar a tradução de documentações técnicas para Português do Brasil.
 
         **Antes de prosseguir:**
-        - ✅ Verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/ulisseshen/documentacao.dev/issues)
+        - ✅ Verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/documentacao-dev/documentacao.dev/issues)
         - ✅ Confirme que a documentação original está disponível publicamente
         - ✅ Certifique-se de que a tradução agregará valor à comunidade brasileira
 
@@ -124,5 +124,5 @@ body:
           required: true
         - label: A documentação original está disponível publicamente
           required: true
-        - label: Li e concordo com as [diretrizes de contribuição](https://github.com/ulisseshen/documentacao.dev/blob/main/src/content/contribuir.md)
+        - label: Li e concordo com as [diretrizes de contribuição](https://github.com/documentacao-dev/documentacao.dev/blob/main/src/content/contribuir.md)
           required: true

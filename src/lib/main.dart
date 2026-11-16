@@ -21,6 +21,7 @@ import 'components/doc_cards.dart';
 import 'components/donation_buttons.dart';
 import 'components/footer.dart';
 import 'components/global_styles.dart';
+import 'components/hub.dart';
 
 // This file is generated automatically by Jaspr, do not remove or edit.
 import 'jaspr_options.dart';
@@ -77,6 +78,9 @@ void main() {
         pattern: 'CustomFooter',
         builder: (_, __, ___) => CustomFooter(),
       ),
+      // Páginas institucionais (início e sobre) no layout `hub`.
+      CustomComponent(pattern: 'HomePage', builder: (_, __, ___) => HomePage()),
+      CustomComponent(pattern: 'SobrePage', builder: (_, __, ___) => SobrePage()),
       // Adds zooming and caption support to images.
       Image(zoom: true),
     ],
@@ -90,7 +94,7 @@ void main() {
             // Enables switching between light and dark mode.
             ThemeToggle(),
             // Shows github stats.
-            GitHubButton(repo: 'ulisseshen/documentacao.dev'),
+            GitHubButton(repo: 'documentacao-dev/documentacao.dev'),
           ],
         ),
         sidebar: Sidebar(groups: [
@@ -104,6 +108,8 @@ void main() {
           ),
         ]),
       ),
+      // Início e Sobre: `layout: hub` no frontmatter.
+      HubLayout(),
     ],
     theme: ContentTheme(
       // Customizes the default theme colors with cyan/blue accent.

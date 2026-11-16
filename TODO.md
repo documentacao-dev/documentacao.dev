@@ -2,22 +2,23 @@
 
 ## 1. Organização no GitHub
 
-- [ ] Criar a organização em <https://github.com/account/organizations/new> (plano Free)
-  - Nome preferido: `documentacao-dev` (igual ao domínio)
-  - Alternativas: `docbr`, `docs-br`, `docsbrasil`
-- [ ] Antes de transferir cada repositório, revisar:
-  - [ ] Secrets do GitHub Actions e integrações de deploy (ex.: Firebase no dartbrasil)
-  - [ ] Domínios personalizados (flutterbrasil.dev, dartbrasil.dev, angularbrasil.dev…)
+- [x] Criar a organização [`documentacao-dev`](https://github.com/documentacao-dev) (plano Free, 15/11/2026)
+- [x] Antes de transferir cada repositório, revisar:
+  - [x] Secrets do GitHub Actions: vão junto na transferência (todos os deploys usam `FIREBASE_SERVICE_ACCOUNT*` no próprio repositório)
+  - [x] Domínios personalizados: todos ficam no Firebase Hosting, não dependem do GitHub
   - [ ] GitHub Apps instalados (ex.: Claude), que precisam ser instalados de novo na org
-- [ ] Transferir os repositórios (*Settings → Danger zone → Transfer*). O GitHub mantém o redirecionamento das URLs antigas.
-  - [ ] `ulisseshen/documentacao.dev`
-  - [ ] `dart2brasil/site-www`
-  - [ ] Flutter (flutterbrasil.dev e docs.flutterbrasil.dev)
-  - [ ] Angular
-  - [ ] React Native
+- [x] Transferir os repositórios. O GitHub mantém o redirecionamento das URLs antigas.
+  - [x] `documentacao.dev` (era `ulisseshen/documentacao.dev`)
+  - [x] `site-www`, dartbrasil.dev (era `dart2brasil/site-www`)
+  - [x] `flutterbrasil`, docs.flutterbrasil.dev (era `ulisseshen/flutterbrasil`)
+  - [x] `flutterbrasil_dev`, flutterbrasil.dev (era `ulisseshen/flutterbrasil_dev`)
+  - [x] `angularbrasil` (era `ulisseshen/angularbrasil`)
+  - [x] `react-native-brasil-website` (era `ulisseshen/react-native-brasil-website`)
+  - [x] Legado: `doc-flutter-brasil` e `dart-brasil` (eram da `brasilflutter`), `flutter-website` (fork antigo)
 - [ ] Decidir o destino das orgs antigas (`dart2brasil`, `brasilflutter`): manter vazias para guardar o nome ou apagar depois da migração
 - [ ] Criar um time por tradução (`time-dart`, `time-typescript`…) com permissão só no seu repositório
-- [ ] Atualizar os links do README e do site para a nova organização
+- [x] Atualizar os links do README e do site para a nova organização
+- [x] Corrigir o que dependia do nome antigo: `docs.yml` e `verificar.py` do flutterbrasil comparavam `github.repository` com `ulisseshen/flutterbrasil`
 
 ## 2. Estrutura: um repositório por tradução
 
@@ -82,7 +83,8 @@ Ordem sugerida, com upstream, conteúdo e licença:
 
 Para cada uma:
 
+- [ ] Começar pelo kit [`modelo-nova-traducao/`](modelo-nova-traducao/): fork na org, `CLAUDE.md` e agentes de tradução já em `model: haiku` (toda tradução da org roda no Haiku)
 - [ ] Conferir a política de marca registrada antes de registrar o domínio (principalmente Vercel/Next.js e Apple/Swift)
 - [ ] Manter o aviso de licença e a atribuição ao original no site traduzido
-- [ ] Ao lançar, mover de "Em Breve" para "Em Processo"/"Disponíveis" no README e em `src/lib/components/doc_cards.dart`
+- [ ] Ao lançar, mover de "Em breve" para "Em processo"/"Disponíveis" no README e em `src/lib/components/doc_cards.dart`
 - [ ] Validar o site com `jaspr serve` (os cards novos não foram compilados porque o Dart não estava instalado na sessão que os criou)

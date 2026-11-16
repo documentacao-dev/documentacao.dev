@@ -13,7 +13,7 @@ Encontrou um erro ou problema na documentação?
 
 ### Como Reportar
 
-1.  Vá até a [página de issues no GitHub](https://github.com/ulisseshen/documentacao.dev/issues)
+1.  Vá até a [página de issues no GitHub](https://github.com/documentacao-dev/documentacao.dev/issues)
 2.  Clique em "New Issue"
 3.  Descreva o problema claramente:
     *   Onde você encontrou o erro
@@ -69,7 +69,7 @@ Precisa da tradução de uma documentação específica que ainda não está dis
 
 ### Como Solicitar
 
-[**📝 Clique aqui para solicitar uma tradução**](https://github.com/ulisseshen/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
+[**📝 Clique aqui para solicitar uma tradução**](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
 
 Ao solicitar uma tradução, você precisará fornecer:
 
@@ -80,7 +80,7 @@ Ao solicitar uma tradução, você precisará fornecer:
 *   **Prioridade** - Urgência da solicitação
 
 <Info>
-  **Importante:** Antes de solicitar, verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/ulisseshen/documentacao.dev/issues?q=is%3Aissue+is%3Aopen+label%3Atradução).
+  **Importante:** Antes de solicitar, verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/documentacao-dev/documentacao.dev/issues?q=is%3Aissue+is%3Aopen+label%3Atradução).
 </Info>
 
 ### Você Pode Ajudar?
@@ -168,7 +168,7 @@ Suas doações nos ajudam a:
 1.  Clone o repositório:
 
 ```
-git clone https://github.com/ulisseshen/documentacao.dev.git
+git clone https://github.com/documentacao-dev/documentacao.dev.git
 cd documentacao.dev
 ```
 
@@ -272,7 +272,7 @@ Ao contribuir, você concorda que suas contribuições serão licenciadas sob a 
 
 Agradecemos a todos os contribuidores que ajudam a manter este projeto vivo e atualizado!
 
-[Ver lista de contribuidores →](https://github.com/ulisseshen/documentacao.dev/graphs/contributors)
+[Ver lista de contribuidores →](https://github.com/documentacao-dev/documentacao.dev/graphs/contributors)
 
 ---
 
