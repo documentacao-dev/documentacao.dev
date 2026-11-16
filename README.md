@@ -30,7 +30,7 @@ O **Documentação.dev** junta num lugar só as traduções da comunidade brasil
 | ✅ | Go | [go.documentacao.dev](https://go.documentacao.dev) (tutoriais, Effective Go, Learn) |
 | ✅ | TypeScript | [typescript.documentacao.dev](https://typescript.documentacao.dev) (Handbook) |
 | ✅ | Rust | [rust.documentacao.dev](https://rust.documentacao.dev) (livro, capítulos 1 a 6) |
-| ✅ | Swift | [swift.documentacao.dev](https://swift.documentacao.dev) (livro: Tour guiado e guia até closures) |
+| ✅ | Swift | [swift.documentacao.dev](https://swift.documentacao.dev) (livro inteiro: Tour, Guia e Referência) |
 | 🔜 | Expo, Kotlin, Next.js | na fila, e a fila anda |
 
 Sentiu falta de alguma? [Pede aqui](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+). Pedido com bastante 👍 sobe na fila.

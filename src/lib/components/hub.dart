@@ -96,7 +96,7 @@ const _docs = [
     ('typescript.documentacao.dev', 'https://typescript.documentacao.dev/docs/handbook/intro.html'),
   ]),
   _Doc('Swift', 'swift', 'Linguagem', 'ar',
-      'O livro do Swift: Tour guiado e os primeiros capítulos do guia, do básico a closures.', [
+      'O livro do Swift inteiro: Tour guiado, Guia da linguagem e Referência.', [
     ('swift.documentacao.dev', 'https://swift.documentacao.dev'),
   ]),
   _Doc('Expo', 'expo', 'Plataforma React Native', 'fila', 'Guias de build, deploy e SDK do Expo.'),
