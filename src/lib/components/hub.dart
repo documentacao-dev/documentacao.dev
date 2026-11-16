@@ -95,10 +95,13 @@ const _docs = [
       'O Handbook inteiro traduzido, do básico à manipulação de tipos.', [
     ('typescript.documentacao.dev', 'https://typescript.documentacao.dev/docs/handbook/intro.html'),
   ]),
+  _Doc('Swift', 'swift', 'Linguagem', 'ar',
+      'O livro do Swift: Tour guiado e os primeiros capítulos do guia, do básico a closures.', [
+    ('swift.documentacao.dev', 'https://swift.documentacao.dev'),
+  ]),
   _Doc('Expo', 'expo', 'Plataforma React Native', 'fila', 'Guias de build, deploy e SDK do Expo.'),
   _Doc('Kotlin', 'kotlin', 'Linguagem', 'fila', 'Linguagem para Android e multiplataforma.'),
   _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
-  _Doc('Swift', 'swift', 'Linguagem', 'fila', 'Linguagem para iOS, macOS e além.'),
   _Doc('Rust', 'rust', 'Linguagem', 'ar',
       'O livro do Rust: capítulos 1 a 6 traduzidos, de primeiros passos a enums e match.', [
     ('rust.documentacao.dev', 'https://rust.documentacao.dev'),
