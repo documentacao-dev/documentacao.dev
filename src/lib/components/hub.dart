@@ -99,7 +99,10 @@ const _docs = [
       'O livro do Swift inteiro: Tour guiado, Guia da linguagem e Referência.', [
     ('swift.documentacao.dev', 'https://swift.documentacao.dev'),
   ]),
-  _Doc('Expo', 'expo', 'Plataforma React Native', 'fila', 'Guias de build, deploy e SDK do Expo.'),
+  _Doc('Expo', 'expo', 'Plataforma React Native', 'ar',
+      'Primeiros passos, Tutorial completo, Develop e Workflow. O resto entra toda semana.', [
+    ('expo.documentacao.dev', 'https://expo.documentacao.dev'),
+  ]),
   _Doc('Kotlin', 'kotlin', 'Linguagem', 'fila', 'Linguagem para Android e multiplataforma.'),
   _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
   _Doc('Rust', 'rust', 'Linguagem', 'ar',
