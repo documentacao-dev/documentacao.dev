@@ -27,9 +27,10 @@ O **Documentação.dev** junta num lugar só as traduções da comunidade brasil
 | ✅ | Dart | [dartbrasil.dev](https://dartbrasil.dev) |
 | ✅ | Angular | [angularbrasil.dev](https://angularbrasil.dev) |
 | 🔄 | React Native | no forno |
-| 🔄 | Go | tutoriais e Effective Go traduzidos, site a publicar ([go-brasil](https://github.com/documentacao-dev/go-brasil)) |
-| 🔄 | TypeScript | Handbook traduzido, site a publicar ([typescript-brasil](https://github.com/documentacao-dev/typescript-brasil)) |
-| 🔜 | Expo, Kotlin, Next.js, Swift, Rust | na fila, e a fila anda |
+| ✅ | Go | [go.documentacao.dev](https://go.documentacao.dev) (tutoriais, Effective Go, Learn) |
+| ✅ | TypeScript | [typescript.documentacao.dev](https://typescript.documentacao.dev) (Handbook) |
+| ✅ | Rust | [rust.documentacao.dev](https://rust.documentacao.dev) (livro, capítulos 1 a 6) |
+| 🔜 | Expo, Kotlin, Next.js, Swift | na fila, e a fila anda |
 
 Sentiu falta de alguma? [Pede aqui](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+). Pedido com bastante 👍 sobe na fila.
 

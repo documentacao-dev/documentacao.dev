@@ -87,19 +87,22 @@ const _docs = [
   ]),
   _Doc('React Native', 'reactNative', 'Framework mobile', 'processo',
       'Tradução em andamento. Dá para ajudar revisando as páginas já traduzidas.'),
-  _Doc('Go', 'go', 'Linguagem', 'processo',
-      'Tutoriais, instalação, Como escrever código Go e Effective Go já traduzidos. Falta publicar o site.', [
-    ('repositório go-brasil', 'https://github.com/documentacao-dev/go-brasil'),
+  _Doc('Go', 'go', 'Linguagem', 'ar',
+      'Tutoriais, Effective Go, instalação, Por que Go e o Learn. O que falta abre no go.dev.', [
+    ('go.documentacao.dev', 'https://go.documentacao.dev'),
   ]),
-  _Doc('TypeScript', 'typeScript', 'Linguagem', 'processo',
-      'O Handbook inteiro já está traduzido. Falta publicar o site.', [
-    ('repositório typescript-brasil', 'https://github.com/documentacao-dev/typescript-brasil'),
+  _Doc('TypeScript', 'typeScript', 'Linguagem', 'ar',
+      'O Handbook inteiro traduzido, do básico à manipulação de tipos.', [
+    ('typescript.documentacao.dev', 'https://typescript.documentacao.dev/docs/handbook/intro.html'),
   ]),
   _Doc('Expo', 'expo', 'Plataforma React Native', 'fila', 'Guias de build, deploy e SDK do Expo.'),
   _Doc('Kotlin', 'kotlin', 'Linguagem', 'fila', 'Linguagem para Android e multiplataforma.'),
   _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
   _Doc('Swift', 'swift', 'Linguagem', 'fila', 'Linguagem para iOS, macOS e além.'),
-  _Doc('Rust', 'rust', 'Linguagem', 'fila', 'O livro e a referência da linguagem.'),
+  _Doc('Rust', 'rust', 'Linguagem', 'ar',
+      'O livro do Rust: capítulos 1 a 6 traduzidos, de primeiros passos a enums e match.', [
+    ('rust.documentacao.dev', 'https://rust.documentacao.dev'),
+  ]),
 ];
 
 const _badges = {'ar': 'No ar', 'processo': 'Em tradução', 'fila': 'Na fila'};
@@ -137,7 +140,7 @@ class HomePage extends StatelessComponent {
     <div class="hub-hero-texto">
       <p class="hub-mono hub-amarelo">// docs oficiais, em pt-BR, feitas pela comunidade</p>
       <h1>Documentação técnica em português, sem abrir o tradutor em outra aba.</h1>
-      <p class="hub-lead">Flutter, Dart e Angular já estão no ar, sincronizados com o inglês toda semana. Termo técnico continua em inglês; o resto vira português de gente.</p>
+      <p class="hub-lead">Flutter, Dart, Angular, Go, TypeScript e Rust já estão no ar, sincronizados com o inglês. Termo técnico continua em inglês; o resto vira português de gente.</p>
       <div class="hub-botoes">
         <a class="hub-btn hub-btn-amarelo" href="#docs">Ver as documentações</a>
         <a class="hub-btn hub-btn-contorno" href="/contribuir">Quero ajudar a traduzir</a>
