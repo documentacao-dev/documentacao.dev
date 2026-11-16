@@ -90,7 +90,7 @@ void main() {
             // Enables switching between light and dark mode.
             ThemeToggle(),
             // Shows github stats.
-            GitHubButton(repo: 'ulisseshen/documentacao.dev'),
+            GitHubButton(repo: 'documentacao-dev/documentacao.dev'),
           ],
         ),
         sidebar: Sidebar(groups: [

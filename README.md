@@ -40,7 +40,7 @@ O **Documentação.dev** é uma iniciativa da comunidade brasileira para traduzi
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/ulisseshen/documentacao.dev.git
+git clone https://github.com/documentacao-dev/documentacao.dev.git
 cd documentacao.dev
 ```
 
@@ -168,7 +168,7 @@ Contribuições são muito bem-vindas! Veja como você pode ajudar:
 
 ### 🌐 Solicitar Tradução de Documentação
 
-Precisa de uma documentação traduzida? [**Clique aqui para solicitar uma tradução**](https://github.com/ulisseshen/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
+Precisa de uma documentação traduzida? [**Clique aqui para solicitar uma tradução**](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
 
 ### 💻 Contribuir com Código
 
@@ -199,7 +199,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 🌍 Comunidade
 
-- **GitHub**: [github.com/ulisseshen/documentacao.dev](https://github.com/ulisseshen/documentacao.dev)
+- **GitHub**: [github.com/documentacao-dev/documentacao.dev](https://github.com/documentacao-dev/documentacao.dev)
 - **LinkedIn**: [linkedin.com/in/ulisseshen](https://www.linkedin.com/in/ulisseshen/)
 
 ## 🙏 Agradecimentos
