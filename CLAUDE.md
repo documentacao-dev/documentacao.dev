@@ -9,3 +9,4 @@ Em qualquer repositório da org, toda tradução e retradução de página (trad
 - Os agentes de tradução em `.claude/agents/` de cada repositório declaram `model: haiku`. Não troque.
 - Se um orquestrador disparar subagentes para traduzir, passe `model: "haiku"` na ferramenta Agent.
 - O modelo principal da sessão fica só com a orquestração: merge do upstream, scripts de conferência, commits e PR. Ele não traduz páginas.
+- Tradução nova (linguagem nova) nasce do kit em `modelo-nova-traducao/`, que já traz essa regra.

@@ -83,7 +83,8 @@ Ordem sugerida, com upstream, conteúdo e licença:
 
 Para cada uma:
 
+- [ ] Começar pelo kit [`modelo-nova-traducao/`](modelo-nova-traducao/): fork na org, `CLAUDE.md` e agentes de tradução já em `model: haiku` (toda tradução da org roda no Haiku)
 - [ ] Conferir a política de marca registrada antes de registrar o domínio (principalmente Vercel/Next.js e Apple/Swift)
 - [ ] Manter o aviso de licença e a atribuição ao original no site traduzido
-- [ ] Ao lançar, mover de "Em Breve" para "Em Processo"/"Disponíveis" no README e em `src/lib/components/doc_cards.dart`
+- [ ] Ao lançar, mover de "Em breve" para "Em processo"/"Disponíveis" no README e em `src/lib/components/doc_cards.dart`
 - [ ] Validar o site com `jaspr serve` (os cards novos não foram compilados porque o Dart não estava instalado na sessão que os criou)
