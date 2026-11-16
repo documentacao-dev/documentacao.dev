@@ -23,6 +23,14 @@ jobs:
       # jaspr_web_compilers 4.x só aceita Dart < 3.11. O Flutter stable já
       # traz Dart 3.14, então fixamos o SDK do Dart e a CLI na mesma linha do
       # jaspr usado no pubspec (0.21.x) até migrar o site para o jaspr 0.23.
+      # O jaspr_web_compilers 4.x compila com o SDK web do Flutter.
+      # Vem antes do setup-dart para o Dart 3.10.9 ficar na frente no PATH.
+      - name: Setup Flutter (SDK web)
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
       - name: Setup Dart SDK
         uses: dart-lang/setup-dart@v1
         with:
