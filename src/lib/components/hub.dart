@@ -103,7 +103,10 @@ const _docs = [
       'Primeiros passos, Tutorial completo, Develop e Workflow. O resto entra toda semana.', [
     ('expo.documentacao.dev', 'https://expo.documentacao.dev'),
   ]),
-  _Doc('Kotlin', 'kotlin', 'Linguagem', 'fila', 'Linguagem para Android e multiplataforma.'),
+  _Doc('Kotlin', 'kotlin', 'Linguagem', 'ar',
+      'Primeiros passos e o Kotlin tour inteiro, do básico ao intermediário; o resto chega toda semana.', [
+    ('kotlin.documentacao.dev', 'https://kotlin.documentacao.dev'),
+  ]),
   _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
   _Doc('Rust', 'rust', 'Linguagem', 'ar',
       'O livro do Rust: capítulos 1 a 6 traduzidos, de primeiros passos a enums e match.', [
