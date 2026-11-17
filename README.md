@@ -32,7 +32,8 @@ O **Documentação.dev** junta num lugar só as traduções da comunidade brasil
 | ✅ | Rust | [rust.documentacao.dev](https://rust.documentacao.dev) (livro, capítulos 1 a 6) |
 | ✅ | Swift | [swift.documentacao.dev](https://swift.documentacao.dev) (livro inteiro: Tour, Guia e Referência) |
 | ✅ | Expo | [expo.documentacao.dev](https://expo.documentacao.dev) (Primeiros passos, Tutorial, Develop e Workflow; em andamento) |
-| 🔜 | Kotlin, Next.js | na fila, e a fila anda |
+| ✅ | Kotlin | [kotlin.documentacao.dev](https://kotlin.documentacao.dev) (Primeiros passos e Kotlin tour; em andamento) |
+| 🔜 | Next.js | na fila, e a fila anda |
 
 Sentiu falta de alguma? [Pede aqui](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+). Pedido com bastante 👍 sobe na fila.
 
