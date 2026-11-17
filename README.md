@@ -33,7 +33,7 @@ O **Documentação.dev** junta num lugar só as traduções da comunidade brasil
 | ✅ | Swift | [swift.documentacao.dev](https://swift.documentacao.dev) (livro inteiro: Tour, Guia e Referência) |
 | ✅ | Expo | [expo.documentacao.dev](https://expo.documentacao.dev) (Primeiros passos, Tutorial, Develop e Workflow; em andamento) |
 | ✅ | Kotlin | [kotlin.documentacao.dev](https://kotlin.documentacao.dev) (Primeiros passos e Kotlin tour; em andamento) |
-| 🔜 | Next.js | na fila, e a fila anda |
+| ✅ | Next.js | [nextjs.documentacao.dev](https://nextjs.documentacao.dev) (Getting Started do App Router; em andamento) |
 
 Sentiu falta de alguma? [Pede aqui](https://github.com/documentacao-dev/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+). Pedido com bastante 👍 sobe na fila.
 

@@ -107,7 +107,10 @@ const _docs = [
       'Primeiros passos e o Kotlin tour inteiro, do básico ao intermediário; o resto chega toda semana.', [
     ('kotlin.documentacao.dev', 'https://kotlin.documentacao.dev'),
   ]),
-  _Doc('Next.js', 'nextJs', 'Framework web', 'fila', 'Framework React para aplicações web.'),
+  _Doc('Next.js', 'nextJs', 'Framework web', 'ar',
+      'Getting Started do App Router inteiro, da instalação ao deploy; o resto chega toda semana.', [
+    ('nextjs.documentacao.dev', 'https://nextjs.documentacao.dev'),
+  ]),
   _Doc('Rust', 'rust', 'Linguagem', 'ar',
       'O livro do Rust: capítulos 1 a 6 traduzidos, de primeiros passos a enums e match.', [
     ('rust.documentacao.dev', 'https://rust.documentacao.dev'),
